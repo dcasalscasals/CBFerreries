@@ -18,4 +18,4 @@ La fuente es la API pública que usa la propia web de FBIB. Si FBIB cambia esa i
 
 - [CB Ferreries · FBIB](https://www.fbib.es/club/147)
 - [FERREDELLA · FBIB](https://www.fbib.es/equipo/10594)
-- Paleta y logotipo extraídos de los PDF entregados en la carpeta del proyecto.
+- Colores tomados del PDF de paleta y logotipo original en PNG facilitado en la carpeta del proyecto.
