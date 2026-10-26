@@ -10,7 +10,7 @@ No publiques únicamente `index.html`: la carpeta `api/` es necesaria para consu
 
 ## Actualización automática
 
-La función consulta los calendarios mensuales públicos de FBIB para el club 147 y FERREDELLA 10594, normaliza partidos y marcadores y evita duplicados. La página vuelve a consultar cada cinco minutos y muestra la hora de la última actualización. Si FBIB no responde, conserva en ese navegador los últimos datos recibidos y lo indica en pantalla.
+La función consulta los calendarios mensuales públicos de FBIB para el club 147 y FERREDELLA 10594, normaliza partidos y marcadores y evita duplicados. La sección “Calendari” permite seleccionar uno o varios equipos y generar un feed público `.ics` desde `/api/calendar?teams=ID,ID`. Los identificadores de partido se mantienen estables para que los cambios de fecha, hora, pabellón o resultado actualicen el mismo evento en calendarios suscritos. El feed se sirve con caché de cinco minutos; Google Calendar puede tardar varias horas en refrescar una suscripción. Cualquiera que tenga el enlace del feed puede consultarlo. La página vuelve a consultar cada cinco minutos y muestra la hora de la última actualización. Si FBIB no responde, conserva en ese navegador los últimos datos recibidos y lo indica en pantalla.
 
 La fuente es la API pública que usa la propia web de FBIB. Si FBIB cambia esa interfaz o limita su acceso, habrá que ajustar `api/matches.js`.
 
