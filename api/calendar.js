@@ -84,7 +84,7 @@ module.exports = async function handler(req, res) {
         `DTSTAMP:${icsDate(new Date())}`,
         `DTSTART:${icsDate(start)}`,
         `DTEND:${icsDate(end)}`,
-        `SUMMARY:${escapeIcs(`${match.home} – ${match.away}`)}`,
+        `SUMMARY:${escapeIcs(`${match.category}: ${match.home} – ${match.away}`)}`,
         `DESCRIPTION:${escapeIcs(`${match.category} · ${status} · Dades de la Federació de Bàsquet de les Illes Balears`)}`,
         `LOCATION:${escapeIcs(match.venue)}`,
         `URL:https://www.fbib.es/partido/${encodeURIComponent(match.id)}`,
